@@ -11,4 +11,6 @@ routes.get('/produto', ProductController.getAll);
 
 routes.post('/produto', ProductController.create);
 
+routes.put("/produto/:id", ProductController.update);
+
 export { routes };

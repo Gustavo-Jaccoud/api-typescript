@@ -10,5 +10,8 @@ export class ProductService{
     static async create(data:ProductDto){
         return await ProductRepository.create(data)
     }
-
+    
+    static async update(id:string, data:ProductDto){
+        return await ProductRepository.update(id, data)
+    }
 }

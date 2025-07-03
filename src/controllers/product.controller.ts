@@ -14,4 +14,9 @@ export class ProductController{
         const response = await ProductService.create(req.body);
         httpResponse.responseHttp(response,res)
     }
+
+    static async update(req: Request, res: Response){
+        const response = await ProductService.update(req.params.id, req.body);
+        httpResponse.responseHttp(response, res);
+    }
 }

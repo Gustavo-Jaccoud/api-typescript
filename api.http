@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3333/
+
+### GET produtos
+GET {{baseUrl}}produto
+
+### POST produto
+POST {{baseUrl}}produto
+Content-Type: application/json
+
+{
+  "nome": "calça",
+  "description": "jeans preta",
+  "price": 100.5,
+  "status": true
+}
+
+### PUT produto
+@id = 6863393a2db7d247b3629cc0
+PUT  {{baseUrl}}produto/{{id}}
+Content-Type: application/json
+
+{
+  "nome": "calça",
+  "description": "jeans ",
+  "price": 100.5,
+  "status": true
+}

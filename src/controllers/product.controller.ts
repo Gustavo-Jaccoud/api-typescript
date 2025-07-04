@@ -19,4 +19,9 @@ export class ProductController{
         const response = await ProductService.update(req.params.id, req.body);
         httpResponse.responseHttp(response, res);
     }
+
+    static async delete(req: Request, res: Response){
+        const response = await ProductService.delete(req.params.id);
+        httpResponse.responseHttp(response, res);
+    }
 }

@@ -13,4 +13,6 @@ routes.post('/produto', ProductController.create);
 
 routes.put("/produto/:id", ProductController.update);
 
+routes.delete("/produto/:id", ProductController.delete);
+
 export { routes };

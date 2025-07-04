@@ -14,4 +14,7 @@ export class ProductService{
     static async update(id:string, data:ProductDto){
         return await ProductRepository.update(id, data)
     }
+     static async delete(id:string){
+        return await ProductRepository.delete(id)
+     }
 }

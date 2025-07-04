@@ -18,4 +18,8 @@ export class ProductRepository{
     static async update(id: string, data: ProductDto) {
         return await ProductModel.findByIdAndUpdate(id, data, { new: true });
     }
+
+    static async delete(id: string){
+        return await ProductModel.findByIdAndDelete(id);
+    }
 }
